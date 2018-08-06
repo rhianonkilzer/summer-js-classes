@@ -5,9 +5,7 @@ class Warthog {
     gender,
     age,
     color,
-    hasTusks = false,
-    leftTuskLength = 0,
-    rightTuskLength = 0
+    hasTusks
   ) {
     this.id = Math.random()
     this.alive = true
@@ -15,15 +13,7 @@ class Warthog {
     this.gender = gender || ''
     this.age = age || 0
     this.color = color || ''
-    this.hasTusks = hasTusks
-    this.tusks = {
-      left: leftTuskLength,
-      right: rightTuskLength
-    };
-  }
-
-  totalTuskLength() {
-    return this.tusks.left + this.tusks.right
+    this.hasTusks = hasTusks || ''
   }
 
 }

@@ -2,7 +2,13 @@ import Warthog from './Warthog.js'
 
 class Lion {
   // WHAT ARE THE FORM FIELDS?
-  constructor(name, hairColor, gender, maneColor, weight) {
+  constructor(
+    name, 
+    hairColor, 
+    gender, 
+    maneColor, 
+    weight
+  ) {
     this.id = Math.random()
     this.name = name || ''
     this.hairColor = hairColor || ''
